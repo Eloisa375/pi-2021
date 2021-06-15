@@ -1,0 +1,136 @@
+/*--------------------------------------------------------------
+# Geral
+--------------------------------------------------------------*/
+body {
+	font-family: "Open Sans", sans-serif;
+	color: #444444;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+	font-family: "Raleway", sans-serif;
+}
+
+a {
+	color: rgba(33, 37, 41);
+	transition: color .15s ease-in-out;
+	text-decoration: none;
+}
+
+a:hover {
+	color: #8e8e8e;
+	text-decoration: none;
+}
+
+/*--------------------------------------------------------------
+# Navbar
+--------------------------------------------------------------*/
+header {
+	background-color: rgba(248, 249, 250, 0.432);
+	-webkit-backdrop-filter: saturate(180%) blur(20px);
+	backdrop-filter: saturate(180%) blur(20px);
+}
+
+.navbar-dark .navbar-toggler-icon {
+	background-image: url("https://image.flaticon.com/icons/png/128/1828/1828859.png");
+}
+
+.navbar {
+	padding: 0;
+}
+
+.navbar ul {
+	margin: 10px;
+	padding: 0;
+	display: flex;
+	list-style: none;
+}
+
+.navbar li {
+	position: relative;
+}
+
+.navbar .dropdown ul {
+	display: block;
+	position: absolute;
+	top: calc(100% + 30px);
+	visibility: hidden;
+	background-color: rgba(248, 249, 250, 0.432);
+	-webkit-backdrop-filter: saturate(180%) blur(20px);
+	backdrop-filter: saturate(180%) blur(20px);
+}
+
+.navbar a,
+.navbar a:focus {
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+	padding: 10px 0 10px 30px;
+	color: rgba(46, 135, 251);
+	transition: 0.3s;
+	font-size: 13px;
+	font-family: "Poppins", sans-serif;
+}
+
+.navbar a:hover,
+.navbar .active,
+.navbar .active:focus,
+.navbar li:hover>a {
+	color: #97e4ea;
+}
+
+.navbar .dropdown ul li {
+	min-width: 200px;
+	list-style-type: none;
+}
+
+.navbar .dropdown ul a {
+	text-transform: none;
+	font-weight: 500;
+}
+
+
+.navbar .dropdown:hover>ul {
+	opacity: 1;
+	top: 100%;
+	visibility: visible;
+}
+
+.navbar .dropdown .dropdown ul {
+	visibility: hidden;
+}
+
+.navbar .dropdown .dropdown:hover>ul {
+	opacity: 1;
+	visibility: visible;
+}
+
+#navbar_login {
+	color: #fa8734;
+}
+#navbar_login:hover {
+	text-decoration: underline;
+}
+
+/*--------------------------------------------------------------
+# Main
+--------------------------------------------------------------*/
+h1 {
+	color: #fa8734;
+}
+
+/*--------------------------------------------------------------
+# Footer
+--------------------------------------------------------------*/
+.icone_li {
+	margin: 0;
+	list-style: none;
+	background-image: url("http://cdn.onlinewebfonts.com/svg/img_516771.png");
+	background-repeat: no-repeat;
+	background-position: left center;
+	background-size: 4%;
+}
